@@ -8,54 +8,55 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Todo {
 	@Id
 	private String id;
-	
+
 	private String title;
 	private String description;
 	private boolean completed;
-	
-	public Todo() {}
+
+	public Todo() {
+	}
 
 	public Todo(String title, String description, boolean completed) {
-	    this.title = title;
-	    this.description = description;
-	    this.completed = completed;
-	  }
+		this.title = title;
+		this.description = description;
+		this.completed = completed;
+	}
 
 	public String getId() {
-	    return id;
-	  }
-	
+		return id;
+	}
+
 	public void setId(String id) {
-	    this.id = id;
-	  }
+		this.id = id;
+	}
 
 	public String getTitle() {
-		  return title;
-	  }
+		return title;
+	}
 
 	public void setTitle(String title) {
-	    this.title = title;
-	  }
+		this.title = title;
+	}
 
 	public String getDescription() {
-	   return description;
-	  }
+		return description;
+	}
 
 	public void setDescription(String description) {
-	    this.description = description;
-	  }
+		this.description = description;
+	}
 
 	public boolean isCompleted() {
-	    return completed;
-	  }
+		return completed;
+	}
 
 	public void setCompete(boolean isCompleted) {
-	    this.completed = isCompleted;
-	  }
+		this.completed = isCompleted;
+	}
 
 	@Override
 	public String toString() {
-	    return "Todo [id=" + id + ", title=" + title + ", desc=" + description + ", published=" + completed + "]";
-	  }
+		return "Todo [id=" + id + ", title=" + title + ", desc=" + description + ", published=" + completed + "]";
+	}
 
 }
